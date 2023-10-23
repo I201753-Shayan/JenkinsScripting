@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'pip3 install -r requirements.txt'
+                bat 'pip3 install -r requirements.txt'
             }
         }
         
         stage('Test') {
             steps {
                 echo 'Test'
-                sh 'python3 test.py'
+                bat 'python3 test.py'
             }
         }
         
