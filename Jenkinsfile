@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test'
-                bat 'python3 test.py'
+                bat 'python test.py'
             }
         }
         
